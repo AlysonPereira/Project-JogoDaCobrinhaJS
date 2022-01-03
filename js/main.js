@@ -1,7 +1,7 @@
 
 const canvas = document.getElementById("snake") //Exporta a tag html pelo Id
 const context = canvas.getContext('2d')
-let box = 32
+const box = 32
 let snake = []
 snake[0] = {
   x: 8 * box ,
@@ -81,4 +81,4 @@ function iniciarJogo() {  //Função responsável por inicar o jogo
   snake.unshift(newHead)
 }
 
-let jogo = setInterval(iniciarJogo, 100)
+const jogo = setInterval(iniciarJogo, 100)
